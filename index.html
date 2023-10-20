@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChargedUp Scouting</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container container-setup">
+      <nav>
+        <div class="nav-button nav-back">
+          <img src="left_arrow.svg" alt="Back" />
+        </div>
+        <div class="nav-status">
+          <div class="nav-status-bars">
+            <div
+              class="nav-status-bar nav-status-bar-active"
+              style="border-radius: 50px 0 0 50px"
+            ></div>
+            <div class="nav-status-bar"></div>
+            <div class="nav-status-bar"></div>
+            <div
+              class="nav-status-bar"
+              style="border-radius: 0 50px 50px 0"
+            ></div>
+          </div>
+          <div class="nav-status-label">Pre Game</div>
+        </div>
+        <div class="nav-button nav-next">
+          Auto
+          <img src="right_arrow.svg" alt="Next" />
+        </div>
+      </nav>
+      <div class="tab-setup">
+        <h1 class="tab-title">Pre Game Setup</h1>
+        <form>
+          <h2 class="form-category">Info</h2>
+          <div class="form-group form-info">
+            <div class="form-info-name">
+              <label for="name"><h3>Name:</h3></label>
+              <input type="text" class="textfield" id="name" /><br /><br />
+            </div>
+            <div class="form-info-team">
+              <label for="team"><h3>Team number:</h3></label>
+              <select class="dropdown" name="team" id="team">
+                <option value="20">20, The Rocketeers</option>
+                <option value="250">250, The Dynamos</option>
+                <option value="1493">1493, Falcons</option>
+                <option value="2791">2791, Shaker Robotics</option>
+                <option value="3044">3044, OxBe4</option>
+                <option value="5881">5881, Tech Valley High Dragons</option>
+                <option value="6300">6300, Northwood School Robotics</option>
+                <option value="7030">7030, ROBOlympians</option>
+                <option value="7031">7031, Duanesburg Robotics</option>
+                <option value="7407">7407, Wired Boars</option>
+                <option value="7718">7718, HVPA Dragons</option>
+              </select><br /><br />
+            </div>
+          </div>
+
+          <h2 class="form-category">Game</h2>
+          <div class="form-group form-game">
+            <div class="form-game-type">
+              <label for="game-type"><h3>Match type</h3></label>
+              <div class="custom-radio">
+                <input
+                  type="radio"
+                  id="practice"
+                  name="game-type"
+                  value="practice"
+                />
+                <label for="practice">Practice</label>
+              </div>
+              <div class="custom-radio">
+                <input type="radio" id="qual" name="game-type" value="qual" />
+                <label for="qual">Qual</label>
+              </div>
+              <div class="custom-radio">
+                <input
+                  type="radio"
+                  id="playoff"
+                  name="game-type"
+                  value="playoff"
+                />
+                <label for="playoff">Playoff</label>
+              </div>
+            </div>
+
+            <div class="form-game-replay">
+              <label for="game-type"><h3>Replay</h3></label>
+              <div class="custom-radio">
+                <input type="radio" id="yes" name="game-replay" value="yes" />
+                <label for="yes">Yes</label>
+              </div>
+              <div class="custom-radio">
+                <input
+                  type="radio"
+                  id="no"
+                  name="game-replay"
+                  value="no"
+                  checked="checked"
+                />
+                <label for="no">No</label>
+              </div>
+            </div>
+
+            <div class="form-game-alliance">
+              <label for="game-type"><h3>Alliance</h3></label>
+              <div class="custom-radio">
+                <input type="radio" id="red" name="game-alliance" value="red" />
+                <label for="red">Red</label>
+              </div>
+              <div class="custom-radio">
+                <input type="radio" id="blue" name="game-alliance" value="blue" />
+                <label for="blue">Blue</label>
+              </div>
+            </div>
+
+            <div class="form-game-start">
+              <label for="game-type"><h3>Start position</h3></label>
+              <div class="custom-radio">
+                <input type="radio" id="1" name="game-start" value="1" />
+                <label for="1">1</label>
+              </div>
+              <div class="custom-radio">
+                <input type="radio" id="2" name="game-start" value="2" />
+                <label for="2">2</label>
+              </div>
+              <div class="custom-radio">
+                <input type="radio" id="3" name="game-start" value="3" />
+                <label for="3">3</label>
+              </div>
+            </div>
+
+            <div class="form-game-load">
+              <label for="game-type"><h3>Pre-load</h3></label>
+              <div class="custom-radio">
+                <input type="radio" id="cube" name="game-load" value="cube" />
+                <label for="cube">Cube</label>
+              </div>
+              <div class="custom-radio">
+                <input type="radio" id="cone" name="game-load" value="cone" />
+                <label for="cone">Cone</label>
+              </div>
+              <div class="custom-radio">
+                <input type="radio" id="none" name="game-load" value="none" />
+                <label for="none">None</label>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
